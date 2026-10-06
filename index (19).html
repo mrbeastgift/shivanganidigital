@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+    <title>Shivangani Singh – Build Your Side Hustle</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Over 1000+ students, homemakers & working professionals have built real side hustles with Shivangani Singh.">
+    <meta property="og:image" content="https://i.ibb.co/4ZF0Qx3j/6208527792656293201-1.jpg">
+    <meta name="theme-color" content="#7C3AED">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1437215041797379');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1437215041797379&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root{
+            --ink:#1E1332;
+            --purple:#7C3AED;
+            --purple-dark:#4C1D95;
+            --violet:#5B21B6;
+            --orange:#F97316;
+            --amber:#F59E0B;
+            --red:#EF4444;
+            --rose:#E11D48;
+            --pink:#EC4899;
+            --paper:#FBFAFF;
+            --paper-2:#F3EFFC;
+            --white:#FFFFFF;
+            --line: rgba(30,19,50,.10);
+            --shadow: 0 10px 28px rgba(76,29,149,.12);
+            --shadow-lg: 0 22px 55px rgba(76,29,149,.20);
+            --radius: 20px;
+        }
+        *{box-sizing:border-box;margin:0;padding:0;}
+        html{scroll-behavior:smooth;overflow-x:hidden;width:100%;}
+        body{
+            font-family:'Manrope',sans-serif;
+            background:var(--paper);
+            color:var(--ink);
+            line-height:1.65;
+            overflow-x:hidden;
+            width:100%;
+            max-width:100vw;
+            position:relative;
+        }
+        h1,h2,h3,h4{font-family:'Sora',sans-serif;font-weight:700;color:var(--ink);letter-spacing:-0.01em;}
+        a{text-decoration:none;color:inherit;}
+        .container{max-width:1160px;margin:0 auto;padding:0 20px;}
+        section{padding:76px 0;position:relative;}
+        img{max-width:100%;display:block;}
+        svg.ic{stroke-width:2.1;}
+
+        @media(prefers-reduced-motion:reduce){
+            *{animation-duration:.01ms !important; transition-duration:.01ms !important;}
+        }
+
+        /* ---------- EYEBROW ---------- */
+        .eyebrow{
+            display:inline-flex;align-items:center;gap:8px;
+            font-weight:800;font-size:.76rem;
+            letter-spacing:.14em;text-transform:uppercase;
+        }
+        .eyebrow.c-purple{color:var(--purple);} .eyebrow.c-orange{color:var(--orange);}
+        .eyebrow.c-pink{color:var(--pink);} .eyebrow.c-rose{color:var(--rose);}
+        .eyebrow-center{display:flex;justify-content:center;}
+
+        /* ---------- BUTTONS ---------- */
+        .btn-primary{
+            display:inline-flex;align-items:center;gap:10px;
+            background:linear-gradient(135deg,var(--purple),var(--pink));
+            color:var(--white);
+            padding:16px 30px;border-radius:100px;font-weight:700;font-size:1rem;
+            border:none;
+            box-shadow:0 14px 30px rgba(124,58,237,.35);
+            transition:transform .25s ease, box-shadow .25s ease;
+            white-space:nowrap;
+            cursor:pointer;
+        }
+        .btn-primary:hover{transform:translateY(-2px) scale(1.02); box-shadow:0 18px 40px rgba(124,58,237,.45); color:var(--white);}
+        .btn-ghost{
+            display:inline-flex;align-items:center;gap:10px;
+            background:var(--white);color:var(--purple-dark);
+            padding:15px 28px;border-radius:100px;font-weight:700;font-size:1rem;
+            border:1.5px solid var(--purple);
+            transition:all .25s ease;
+            cursor:pointer;
+        }
+        .btn-ghost:hover{background:var(--paper-2);}
+
+        /* ---------- FLOATING WHATSAPP ---------- */
+        .float-wa{
+            position:fixed;bottom:20px;right:20px;z-index:600;
+            width:58px;height:58px;border-radius:50%;
+            background:linear-gradient(135deg,#25D366,#128C7E);
+            display:flex;align-items:center;justify-content:center;
+            box-shadow:0 12px 28px rgba(18,140,126,.45);
+            animation:floatPulse 2.4s infinite;
+        }
+        @keyframes floatPulse{0%,100%{box-shadow:0 12px 28px rgba(18,140,126,.45);}50%{box-shadow:0 12px 28px rgba(18,140,126,.75);}}
+
+        /* ---------- HERO ---------- */
+        .hero{
+            padding:56px 0 60px;
+            background:linear-gradient(165deg,#F5EEFF 0%, #FBFAFF 46%, #FFF6EE 100%);
+            overflow:hidden;
+        }
+        .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+        .hero-tag{
+            display:inline-flex;align-items:center;gap:8px;
+            background:var(--white);border:1px solid var(--line);border-radius:100px;
+            padding:9px 18px;font-weight:700;font-size:.82rem;color:var(--purple-dark);
+            box-shadow:var(--shadow);margin-bottom:20px;
+        }
+        .hero-tag .sq{color:var(--orange);}
+        .hero h1{font-size:2.7rem;line-height:1.14;margin-bottom:20px;}
+        .hero h1 .hl{background:linear-gradient(135deg,var(--purple),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+        .hero p.lede{font-size:1.1rem;color:#4B3F60;max-width:520px;margin-bottom:30px;}
+        .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px;}
+        .hero-metrics{display:flex;gap:14px;flex-wrap:wrap;}
+        .metric{
+            background:var(--white);border:1px solid var(--line);border-radius:14px;
+            padding:14px 18px;box-shadow:var(--shadow);flex:1;min-width:120px;
+        }
+        .metric .num{font-family:'Sora',sans-serif;font-size:1.5rem;font-weight:800;}
+        .metric:nth-child(1) .num{color:var(--purple);}
+        .metric:nth-child(2) .num{color:var(--orange);}
+        .metric:nth-child(3) .num{color:var(--rose);}
+        .metric .label{font-size:.76rem;color:#6B5F80;text-transform:uppercase;letter-spacing:.05em;font-weight:700;}
+
+        .hero-visual{position:relative;}
+        .hero-photo-frame{
+            position:relative;border-radius:28px;overflow:hidden;
+            box-shadow:var(--shadow-lg);
+            border:6px solid var(--white);
+            display:inline-block;
+            max-width:100%;
+        }
+        .hero-photo-frame img{width:100%;height:auto;display:block;object-fit:contain;}
+        .hero-blob{position:absolute;border-radius:50%;filter:blur(2px);z-index:-1;opacity:.55;}
+        .hero-blob.b1{width:170px;height:170px;background:var(--amber);top:-40px;right:-40px;}
+        .hero-blob.b2{width:130px;height:130px;background:var(--pink);bottom:-30px;left:-30px;}
+
+        /* ---------- ABOUT ---------- */
+        .about{background:var(--white);}
+        .about-grid{display:grid;grid-template-columns:.48fr 1fr;gap:56px;align-items:start;}
+        .about-card{
+            background:linear-gradient(155deg,var(--orange),var(--amber));color:var(--white);border-radius:var(--radius);
+            padding:30px;box-shadow:var(--shadow);
+        }
+        .about-card .ic-wrap{width:48px;height:48px;border-radius:14px;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+        .about-card h3{color:var(--white);font-size:1.05rem;margin-bottom:10px;}
+        .about-card p{color:rgba(255,255,255,.92);font-size:1.02rem;}
+        .about-copy h2{font-size:2rem;margin-bottom:16px;}
+        .about-copy p{color:#4B3F60;font-size:1.03rem;margin-bottom:18px;}
+        .about-points{list-style:none;margin:22px 0 28px;display:grid;gap:14px;}
+        .about-points li{display:flex;align-items:center;gap:14px;font-weight:700;font-size:.98rem;}
+        .about-points li .ic{
+            width:38px;height:38px;border-radius:11px;
+            display:flex;align-items:center;justify-content:center;color:var(--white);flex-shrink:0;
+        }
+        .about-points li:nth-child(1) .ic{background:linear-gradient(135deg,var(--purple),var(--violet));}
+        .about-points li:nth-child(2) .ic{background:linear-gradient(135deg,var(--pink),var(--rose));}
+        .about-points li:nth-child(3) .ic{background:linear-gradient(135deg,var(--amber),var(--orange));}
+
+        /* ---------- VIDEO SLIDER ---------- */
+        .stories{background:var(--paper-2);}
+        .stories h2{font-size:2rem;text-align:center;}
+        .stories .sub{text-align:center;color:#6B5F80;max-width:520px;margin:12px auto 0;}
+        .shorts-wrap{position:relative;padding:0 44px;margin-top:40px;}
+        .shorts-viewport{overflow-x:auto;overflow-y:hidden;padding-bottom:14px;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--pink) var(--paper);}
+        .shorts-viewport::-webkit-scrollbar{height:7px;}
+        .shorts-viewport::-webkit-scrollbar-track{background:var(--paper);border-radius:4px;}
+        .shorts-viewport::-webkit-scrollbar-thumb{background:var(--pink);border-radius:4px;}
+        .shorts-track{display:flex;gap:18px;width:max-content;}
+        .shorts-item{flex-shrink:0;width:270px;height:480px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#000;border:3px solid var(--white);}
+        .shorts-item video{width:100%;height:100%;object-fit:cover;display:block;background:#000;}
+        .scroll-arrow{
+            position:absolute;top:50%;transform:translateY(-50%);
+            width:42px;height:42px;background:var(--white);border:1px solid var(--line);border-radius:50%;
+            display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;
+            box-shadow:var(--shadow);color:var(--purple);transition:all .25s ease;
+        }
+        .scroll-arrow:hover{background:var(--purple);color:var(--white);}
+        .scroll-arrow.prev{left:0;} .scroll-arrow.next{right:0;}
+
+        /* ---------- PROCESS ---------- */
+        .process{background:var(--white);}
+        .process h2{font-size:2rem;text-align:center;margin-bottom:46px;}
+        .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+        .process-card{
+            border-radius:var(--radius);padding:26px 22px;
+            border:1px solid var(--line);transition:transform .3s ease, box-shadow .3s ease;
+            background:var(--paper);
+        }
+        .process-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+        .process-icwrap{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--white);margin-bottom:16px;}
+        .process-card:nth-child(1) .process-icwrap{background:linear-gradient(135deg,var(--purple),var(--violet));}
+        .process-card:nth-child(2) .process-icwrap{background:linear-gradient(135deg,var(--orange),var(--amber));}
+        .process-card:nth-child(3) .process-icwrap{background:linear-gradient(135deg,var(--pink),var(--rose));}
+        .process-card:nth-child(4) .process-icwrap{background:linear-gradient(135deg,var(--red),var(--rose));}
+        .process-card h3{font-size:1.05rem;margin-bottom:6px;}
+        .process-card p{font-size:.9rem;color:#6B5F80;}
+        .process-extra{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);}
+        .process-extra .tag{font-weight:800;font-size:.8rem;display:block;margin-bottom:4px;}
+        .process-card:nth-child(1) .process-extra .tag{color:var(--purple);}
+        .process-card:nth-child(2) .process-extra .tag{color:var(--orange);}
+        .process-card:nth-child(3) .process-extra .tag{color:var(--rose);}
+        .process-card:nth-child(4) .process-extra .tag{color:var(--red);}
+        .process-extra p{font-size:.84rem;}
+        .process-cta{text-align:center;margin-top:48px;}
+
+        /* ---------- CREDENTIALS / STATS ---------- */
+        .credentials{background:linear-gradient(155deg,var(--purple-dark),var(--violet) 55%, var(--purple));color:var(--white);}
+        .credentials h2{color:var(--white);font-size:2rem;text-align:center;margin-bottom:46px;}
+        .cred-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+        .cred-row{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:20px 22px;}
+        .cred-row .ic{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);flex-shrink:0;}
+        .cred-row:nth-child(1) .ic{background:linear-gradient(135deg,var(--amber),var(--orange));}
+        .cred-row:nth-child(2) .ic{background:linear-gradient(135deg,var(--pink),var(--rose));}
+        .cred-row .num{font-family:'Sora',sans-serif;font-size:1.6rem;font-weight:800;}
+        .cred-row .label{font-size:.82rem;color:#E7DDFB;}
+        .cred-highlight{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:28px;display:flex;flex-direction:column;justify-content:center;gap:20px;}
+        .cred-highlight h3{color:var(--amber);font-size:1.15rem;}
+        .cred-highlight .split{display:flex;gap:28px;}
+        .cred-highlight .split div{flex:1;}
+        .cred-highlight .split .num{font-size:1.5rem;font-family:'Sora',sans-serif;font-weight:800;}
+        .cred-highlight .split .label{color:#E7DDFB;font-size:.8rem;}
+
+        /* ---------- FAQ ---------- */
+        .faq{background:var(--paper-2);}
+        .faq h2{font-size:2rem;text-align:center;margin-bottom:42px;}
+        .faq-list{max-width:760px;margin:0 auto;display:grid;gap:12px;}
+        .faq-item{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;}
+        .faq-q{width:100%;text-align:left;background:none;border:none;padding:18px 22px;font-family:'Manrope',sans-serif;font-weight:700;color:var(--ink);font-size:.98rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;}
+        .faq-q .chev{transition:transform .3s ease;color:var(--rose);flex-shrink:0;display:flex;}
+        .faq-item.open .faq-q .chev{transform:rotate(180deg);}
+        .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+        .faq-a p{padding:0 22px 20px;color:#4B3F60;font-size:.94rem;}
+
+        /* ---------- FINAL CTA ---------- */
+        .final{background:linear-gradient(150deg,var(--purple) 0%, var(--rose) 55%, var(--orange) 130%);color:var(--white);}
+        .final .container{max-width:920px;text-align:center;}
+        .final h2{color:var(--white);font-size:2.3rem;margin-bottom:14px;}
+        .final p.sub{color:rgba(255,255,255,.9);font-size:1.05rem;margin-bottom:38px;}
+        .final-card{background:var(--white);color:var(--ink);border-radius:24px;padding:36px;box-shadow:var(--shadow-lg);margin-bottom:30px;text-align:left;}
+        .final-card h3{font-size:1.25rem;margin-bottom:16px;}
+        .details-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px;}
+        .detail-chip{border-radius:12px;padding:14px 16px;font-size:.9rem;font-weight:600;color:var(--white);}
+        .detail-chip:nth-child(1){background:linear-gradient(135deg,var(--purple),var(--violet));}
+        .detail-chip:nth-child(2){background:linear-gradient(135deg,var(--pink),var(--rose));}
+        .detail-chip:nth-child(3){background:linear-gradient(135deg,var(--orange),var(--amber));}
+        .final-card .num-line{font-weight:800;color:var(--rose);margin-bottom:18px;font-size:1.02rem;}
+        .promise{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:20px 24px;margin-bottom:34px;display:flex;flex-wrap:wrap;gap:18px;justify-content:center;}
+        .promise div{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.94rem;}
+
+        /* ---------- ADDRESS ---------- */
+        .address-box{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:28px;margin-bottom:30px;text-align:left;}
+        .address-box h4{color:var(--white);font-size:1.02rem;margin-bottom:16px;}
+        .addr-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px;}
+        .addr-table{width:100%;min-width:520px;border-collapse:collapse;}
+        .addr-table td{padding:11px 14px;font-size:.86rem;border:1px solid rgba(255,255,255,.18);color:#FFF3F8;}
+        .addr-table td.k{font-weight:800;color:var(--white);background:rgba(255,255,255,.08);width:22%;}
+        .addr-table a{color:#FFF3F8;text-decoration:underline;}
+
+        .footer-links{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:8px;}
+        .privacy-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);color:var(--white);padding:10px 20px;border-radius:100px;font-weight:700;font-size:.84rem;cursor:pointer;transition:all .25s ease;}
+        .privacy-btn:hover{background:rgba(255,255,255,.25);}
+        .insta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--white);color:var(--rose);padding:10px 22px;border-radius:100px;font-weight:800;font-size:.84rem;transition:transform .25s ease;}
+        .insta-btn:hover{transform:translateY(-2px);}
+        .final-sign{margin-top:30px;color:rgba(255,255,255,.9);font-size:.94rem;}
+        .final-sign strong{display:block;font-family:'Sora',sans-serif;font-size:1.3rem;color:var(--white);margin-top:6px;}
+
+        /* ---------- PRIVACY MODAL ---------- */
+        .pp-overlay-new{position:fixed;inset:0;background:rgba(30,19,50,.72);backdrop-filter:blur(4px);z-index:10001;opacity:0;visibility:hidden;transition:opacity .3s ease;}
+        .pp-overlay-new.show{opacity:1;visibility:visible;}
+        .pp-modal-new{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.95);width:90%;max-width:560px;max-height:86vh;background:#fff;border-radius:20px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:all .3s ease;}
+        .pp-overlay-new.show .pp-modal-new{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1);}
+        .pp-header-new{display:flex;align-items:center;justify-content:space-between;padding:22px 26px;border-bottom:1px solid var(--line);flex-shrink:0;}
+        .pp-title-new{font-family:'Sora',sans-serif;font-size:1.2rem;font-weight:700;color:var(--purple-dark);}
+        .pp-close-new{background:none;border:none;font-size:1.6rem;color:var(--rose);cursor:pointer;line-height:1;}
+        .pp-body-new{padding:26px;overflow-y:auto;font-size:.95rem;line-height:1.65;color:#4B3F60;}
+        .pp-body-new h3{font-size:1rem;font-weight:800;margin:16px 0 8px;color:var(--purple-dark);font-family:'Manrope',sans-serif;}
+        .pp-body-new h3:first-child{margin-top:0;}
+        .pp-body-new p{margin-bottom:10px;}
+        .pp-footer-new{margin-top:14px;font-size:.85rem;font-weight:800;text-align:center;color:var(--rose);}
+
+        /* ---------- LEAD FORM MODAL ---------- */
+        .lead-overlay{position:fixed;inset:0;background:rgba(30,19,50,.72);backdrop-filter:blur(4px);z-index:10002;opacity:0;visibility:hidden;transition:opacity .3s ease;}
+        .lead-overlay.show{opacity:1;visibility:visible;}
+        .lead-modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.95);width:90%;max-width:440px;max-height:90vh;background:#fff;border-radius:22px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:all .3s ease;overflow:hidden;}
+        .lead-overlay.show .lead-modal{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1);}
+        .lead-top{background:linear-gradient(135deg,var(--purple),var(--rose));padding:26px 26px 20px;position:relative;}
+        .lead-top h3{color:var(--white);font-size:1.2rem;margin-bottom:6px;}
+        .lead-top p{color:rgba(255,255,255,.9);font-size:.88rem;}
+        .lead-close{position:absolute;top:14px;right:16px;background:rgba(255,255,255,.2);border:none;color:var(--white);width:30px;height:30px;border-radius:50%;font-size:1.2rem;cursor:pointer;line-height:1;}
+        .lead-body{padding:24px 26px 28px;overflow-y:auto;}
+        .lead-field{margin-bottom:16px;}
+        .lead-field label{display:block;font-weight:700;font-size:.84rem;color:var(--ink);margin-bottom:7px;}
+        .lead-field input{
+            width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);
+            font-family:'Manrope',sans-serif;font-size:.95rem;color:var(--ink);
+            transition:border-color .2s ease;background:var(--paper);
+        }
+        .lead-field input:focus{outline:none;border-color:var(--purple);}
+        .lead-error{color:var(--rose);font-size:.78rem;font-weight:700;margin-top:5px;display:none;}
+        .lead-field.err input{border-color:var(--rose);}
+        .lead-field.err .lead-error{display:block;}
+        .lead-submit{
+            width:100%;margin-top:6px;background:linear-gradient(135deg,var(--purple),var(--pink));
+            color:var(--white);border:none;padding:15px;border-radius:100px;font-weight:700;font-size:.98rem;
+            cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;
+            box-shadow:0 14px 30px rgba(124,58,237,.35);transition:transform .25s ease;
+        }
+        .lead-submit:hover{transform:translateY(-2px);}
+        .lead-note{text-align:center;font-size:.76rem;color:#8478A0;margin-top:12px;}
+
+        /* ---------- RESPONSIVE ---------- */
+        @media(max-width:900px){
+            .hero-grid, .about-grid{grid-template-columns:1fr;}
+            .hero-visual{order:-1;max-width:340px;margin:0 auto;}
+            .process-grid{grid-template-columns:repeat(2,1fr);}
+            .cred-grid{grid-template-columns:1fr;}
+            .details-grid{grid-template-columns:1fr;}
+        }
+        @media(max-width:600px){
+            section{padding:52px 0;}
+            .container{padding:0 16px;}
+            .hero{padding:40px 0 44px;}
+            .hero h1{font-size:1.8rem;}
+            .hero p.lede{font-size:1rem;}
+            .process-grid{grid-template-columns:1fr;}
+            .hero-metrics{flex-direction:column;}
+            .final-card{padding:22px;}
+            .addr-table td{font-size:.74rem;padding:8px;}
+            .addr-table td.k{width:auto;}
+            .shorts-item{width:230px;height:409px;}
+            .scroll-arrow{display:none;}
+            .shorts-wrap{padding:0 6px;}
+            .btn-primary,.btn-ghost{width:100%;justify-content:center;}
+            .hero-ctas{flex-direction:column;}
+            .float-wa{width:52px;height:52px;bottom:16px;right:16px;}
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== LEAD FORM MODAL ===== -->
+<div class="lead-overlay" id="leadOverlay">
+    <div class="lead-modal">
+        <div class="lead-top">
+            <button class="lead-close" id="leadClose">&times;</button>
+            <h3>Let's Get You Started 🚀</h3>
+            <p>Fill your details below to continue.</p>
+        </div>
+        <div class="lead-body">
+            <form id="leadForm" novalidate>
+                <div class="lead-field" id="fieldName">
+                    <label for="leadName">Full Name</label>
+                    <input type="text" id="leadName" placeholder="Enter your full name" autocomplete="name">
+                    <div class="lead-error">Please enter your name</div>
+                </div>
+                <div class="lead-field" id="fieldAge">
+                    <label for="leadAge">Age</label>
+                    <input type="number" id="leadAge" placeholder="Enter your age" min="10" max="99" autocomplete="off">
+                    <div class="lead-error">Please enter a valid age</div>
+                </div>
+                <div class="lead-field" id="fieldProfession">
+                    <label for="leadProfession">Profession</label>
+                    <input type="text" id="leadProfession" placeholder="Student / Homemaker / Working Professional" autocomplete="off">
+                    <div class="lead-error">Please enter your profession</div>
+                </div>
+                <button type="submit" class="lead-submit">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Continue
+                </button>
+             </form>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PRIVACY MODAL ===== -->
+<div class="pp-overlay-new" id="ppOverlayNew">
+    <div class="pp-modal-new">
+        <div class="pp-header-new">
+            <div class="pp-title-new">Privacy Policy</div>
+            <button class="pp-close-new" id="ppCloseNew">&times;</button>
+        </div>
+        <div class="pp-body-new">
+            <h3>Information We Collect</h3>
+            <p>We collect information you provide directly to us, such as your name, phone number, and email address when you contact us or fill our forms.</p>
+            <h3>How We Use Your Information</h3>
+            <p>Your information is used solely to communicate with you about our training programs, provide customer support, and send updates about courses you've expressed interest in.</p>
+            <h3>Data Protection</h3>
+            <p>We implement appropriate security measures to protect your personal information. Your data is never sold or shared with third parties for marketing purposes.</p>
+            <h3>Your Rights</h3>
+            <p>You have the right to access, correct, or delete your personal information at any time. Contact us to exercise these rights or for any privacy-related concerns.</p>
+            <div class="pp-footer-new">By using our services, you agree to this privacy policy. Last updated: August 2026</div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/917080175404?text=I%20am%20interested" target="_blank" class="float-wa" aria-label="Chat with us">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</a>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-tag"><span class="sq">●</span> 1000+ students already earning</span>
+            <h1>Build a real <span class="hl">side hustle</span> from home — no experience needed</h1>
+            <p class="lede">Homemakers, students and working professionals are building genuine, sustainable income streams with hands-on mentorship from Shivangani Singh.</p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/917080175404?text=I%20am%20interested" target="_blank" class="btn-primary js-open-lead">
+                    <svg class="ic" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Join Now
+                </a>
+                <a href="#process" class="btn-ghost js-open-lead" data-wa="https://wa.me/917080175404?text=I%20am%20interested">
+                    <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18l14-9L6 3z"/></svg>
+                    See how it works
+                </a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric"><div class="num">1000+</div><div class="label">Students trained</div></div>
+                <div class="metric"><div class="num">100%</div><div class="label">Practical approach</div></div>
+                <div class="metric"><div class="num">24/7</div><div class="label">Support available</div></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-blob b1"></div>
+            <div class="hero-blob b2"></div>
+            <div class="hero-photo-frame">
+                <img src="https://i.ibb.co/4ZF0Qx3j/6208527792656293201-1.jpg" alt="Shivangani Singh">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about">
+    <div class="container about-grid">
+        <div class="about-card">
+            <div class="ic-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <h3>Mission</h3>
+            <p>Build a genuine side hustle from home — no experience needed.</p>
+        </div>
+        <div class="about-copy">
+            <span class="eyebrow c-orange">Your Mentor</span>
+            <h2>Hi, I'm Shivangani Singh</h2>
+            <p>Are you a student, working professional, or homemaker looking to start a reliable side hustle journey? I help people like you create a legitimate, sustainable income source — whether you want to work part-time or full-time from the comfort of your home.</p>
+            <ul class="about-points">
+                <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Real, skill-based opportunities</li>
+                <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span> Work from anywhere</li>
+                <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-2 7-6 7-11a7 7 0 0 0-14 0c0 5 3 9 7 11z"/><path d="M12 12v-2"/></svg></span> Sustainable growth</li>
+            </ul>
+            <a href="https://wa.me/917080175404?text=I%20am%20interested" target="_blank" class="btn-primary js-open-lead">
+                <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Connect With Me
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== VIDEO SLIDER ===== -->
+<section class="stories">
+    <div class="container">
+        <span class="eyebrow c-pink eyebrow-center">Real Stories</span>
+        <h2>Real Success Stories</h2>
+        <p class="sub">Swipe or use the arrows to watch student results</p>
+
+        <div class="shorts-wrap">
+            <button class="scroll-arrow prev" id="scrollLeft" aria-label="Scroll Left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <div class="shorts-viewport" id="feedbackViewport">
+                <div class="shorts-track" id="photoTrack"></div>
+            </div>
+            <button class="scroll-arrow next" id="scrollRight" aria-label="Scroll Right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process" id="process">
+    <div class="container">
+        <span class="eyebrow c-purple eyebrow-center">The Journey</span>
+        <h2>What Happens When You Join?</h2>
+        <div class="process-grid">
+            <div class="process-card">
+                <div class="process-icwrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+                <h3>Instant Connection</h3>
+                <p>Direct personal access to me.</p>
+                <div class="process-extra">
+                    <span class="tag">Real-time Blueprint</span>
+                    <p>A proven roadmap from day one to actually make money.</p>
+                </div>
+            </div>
+            <div class="process-card">
+                <div class="process-icwrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <h3>Complete Access</h3>
+                <p>Proven step-by-step training system.</p>
+                <div class="process-extra">
+                    <span class="tag">24×7 Support</span>
+                    <p>A mentor who built 7 figures through side hustles — always by your side.</p>
+                </div>
+            </div>
+            <div class="process-card">
+                <div class="process-icwrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <h3>Daily Mentorship</h3>
+                <p>24/7 support & community access.</p>
+                <div class="process-extra">
+                    <span class="tag">Freelancing Opportunities</span>
+                    <p>Learn a skill, then monetize it through real freelancing work.</p>
+                </div>
+            </div>
+            <div class="process-card">
+                <div class="process-icwrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                <h3>Start Earning</h3>
+                <p>Begin from Week 1, confidently.</p>
+                <div class="process-extra">
+                    <span class="tag">Multiple Income Streams</span>
+                    <p>Unlock several income sources — don't depend on just one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="https://wa.me/917080175404?text=I%20am%20interested" target="_blank" class="btn-primary js-open-lead">
+                <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                Get Started Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CREDENTIALS ===== -->
+<section class="credentials">
+    <div class="container">
+        <span class="eyebrow eyebrow-center" style="color:var(--amber);">Track Record</span>
+        <h2>Know Your Coach</h2>
+        <div class="cred-grid">
+            <div style="display:grid;gap:20px;">
+                <div class="cred-row">
+                    <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.6L22 9.3l-5 4.8 1.2 6.9L12 17.8l-6.2 3.2L7 14.1 2 9.3l7.1-.7L12 2z"/></svg></div>
+                    <div><div class="num">3+</div><div class="label">Years of experience</div></div>
+                </div>
+                <div class="cred-row">
+                    <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <div><div class="num">1000+</div><div class="label">Students reached</div></div>
+                </div>
+            </div>
+            <div class="cred-highlight">
+                <h3>Now it's your time</h3>
+                <div class="split">
+                    <div><div class="num">₹3,00,000+</div><div class="label">Earned by students</div></div>
+                    <div><div class="num">100+</div><div class="label">Active earners</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+    <div class="container">
+        <span class="eyebrow c-rose eyebrow-center">Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list" id="faqList">
+            <div class="faq-item open">
+                <button class="faq-q">What kind of work will I be doing?<span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+                <div class="faq-a"><p>Digital skills: social media management, content creation, affiliate marketing, and more. 100% legitimate and skill-based.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">Is this program legitimate & safe?<span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+                <div class="faq-a"><p>Absolutely. We focus on real skills that are in high demand. 1000+ students are already earning through our system.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">How much time daily?<span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+                <div class="faq-a"><p>Just 1–2 hours daily. Flexible for students, working professionals, and homemakers.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">When will I start earning?<span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+                <div class="faq-a"><p>Most students start seeing results within the first month, depending on consistency.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">Any prior experience needed?<span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+                <div class="faq-a"><p>No experience needed! We start from zero and guide you step-by-step.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final">
+    <div class="container">
+        <h2>Ready to Transform Your Life?</h2>
+        <p class="sub">Join thousands on their journey to financial independence</p>
+
+        <div class="final-card">
+            <h3>How to Start?</h3>
+            <p style="margin-bottom:16px;color:#4B3F60;">Simply share your details with me:</p>
+            <div class="details-grid">
+                <div class="detail-chip">📝 Name: Full Name</div>
+                <div class="detail-chip">🎂 Age: Your Age</div>
+                <div class="detail-chip">💼 Profession: Current Status</div>
+            </div>
+            <p class="num-line">📌 Save my number: 70801 75404</p>
+            <a href="https://wa.me/917080175404?text=I%20am%20interested" target="_blank" class="btn-primary js-open-lead" style="width:100%;justify-content:center;">
+                <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Start Now
+            </a>
+        </div>
+
+        <div class="promise">
+            <div>📋 Complete details within 24 hours</div>
+            <div>🗺 Clear roadmap</div>
+        </div>
+
+        <!-- ===== ADDRESS ===== -->
+        <div class="address-box">
+            <h4>📍 Official Address of Enterprise</h4>
+            <div class="addr-scroll">
+            <table class="addr-table">
+                <tbody>
+                    <tr>
+                        <td class="k">Flat/Door/Block No.</td><td>H.no. 16-2-741/45/D</td>
+                        <td class="k">Name of Premises / Building</td><td>2nd Floor, Andhra Bank Colony</td>
+                    </tr>
+                    <tr>
+                        <td class="k">Village/Town</td><td>Asmangadh, Malakpet</td>
+                        <td class="k">Road/Street/Lane</td><td>Road No. 3</td>
+                    </tr>
+                    <tr>
+                        <td class="k">State</td><td>Telangana</td>
+                        <td class="k">City / District / Pin</td><td>Hyderabad — 500036</td>
+                    </tr>
+                    <tr>
+                        <td class="k">Mobile</td><td><a href="tel:7080175404">7080175404</a></td>
+                        <td class="k">Email</td><td><a href="mailto:ipangency18@gmail.com">ipangency18@gmail.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <button class="privacy-btn" id="privacyBtn"><i data-lucide="shield-check" width="16"></i> Privacy Policy</button>
+            <a href="https://www.instagram.com/neetusmartclicks" target="_blank" class="insta-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                Follow on Instagram
+            </a>
+        </div>
+
+        <p class="final-sign">🌟 Empower with skills • 🌈 Support every vision • 🚀 Dreams to direction<br><strong>With Strength & Sincerity, Shivangani Singh</strong></p>
+    </div>
+</section>
+
+<script>
+    lucide.createIcons();
+
+    /* VIDEO SLIDER (AUTO + MANUAL) */
+    const vids = [
+        'https://neetudigital.vercel.app/VID-20260831-WA0015.mp4',
+        'https://neetudigital.vercel.app/VID-20260831-WA0017.mp4',
+        'https://neetudigital.vercel.app/VID-20260901-WA0011.mp4',
+        'https://neetudigital.vercel.app/VID-20260909-WA0004.mp4'
+    ];
+    const photoTrack = document.getElementById('photoTrack');
+    vids.forEach((src, i) => {
+        const d = document.createElement('div');
+        d.className = 'shorts-item';
+        d.innerHTML = '<video src="' + src + '" controls playsinline preload="metadata" aria-label="Student result video ' + (i + 1) + '"></video>';
+        photoTrack.appendChild(d);
+    });
+
+    const feedbackViewport = document.getElementById('feedbackViewport');
+    function stepSize() {
+        const item = photoTrack.querySelector('.shorts-item');
+        return item ? item.offsetWidth + 18 : 290;
+    }
+    function slideNext() {
+        const max = feedbackViewport.scrollWidth - feedbackViewport.clientWidth;
+        if (feedbackViewport.scrollLeft >= max - 5) feedbackViewport.scrollTo({ left: 0, behavior: 'smooth' });
+        else feedbackViewport.scrollBy({ left: stepSize(), behavior: 'smooth' });
+    }
+    function slidePrev() {
+        if (feedbackViewport.scrollLeft <= 5) feedbackViewport.scrollTo({ left: feedbackViewport.scrollWidth, behavior: 'smooth' });
+        else feedbackViewport.scrollBy({ left: -stepSize(), behavior: 'smooth' });
+    }
+    let autoTimer = null;
+    let videoPlaying = false;
+    function startAuto() { stopAuto(); if (!videoPlaying) autoTimer = setInterval(slideNext, 2500); }
+    function stopAuto() { if (autoTimer) clearInterval(autoTimer); autoTimer = null; }
+
+    /* Pause auto-slide while any video is playing; pause other videos when one starts */
+    const allVideos = photoTrack.querySelectorAll('video');
+    allVideos.forEach(v => {
+        v.addEventListener('play', () => {
+            allVideos.forEach(o => { if (o !== v) o.pause(); });
+            videoPlaying = true;
+            stopAuto();
+        });
+        v.addEventListener('pause', () => {
+            videoPlaying = Array.from(allVideos).some(o => !o.paused && !o.ended);
+            if (!videoPlaying) startAuto();
+        });
+        v.addEventListener('ended', () => {
+            videoPlaying = Array.from(allVideos).some(o => !o.paused && !o.ended);
+            if (!videoPlaying) startAuto();
+        });
+    });
+
+    document.getElementById('scrollLeft').addEventListener('click', () => { slidePrev(); startAuto(); });
+    document.getElementById('scrollRight').addEventListener('click', () => { slideNext(); startAuto(); });
+    feedbackViewport.addEventListener('mouseenter', stopAuto);
+    feedbackViewport.addEventListener('mouseleave', startAuto);
+    feedbackViewport.addEventListener('touchstart', stopAuto, { passive: true });
+    feedbackViewport.addEventListener('touchend', () => setTimeout(startAuto, 2500), { passive: true });
+    startAuto();
+
+    /* FAQ ACCORDION */
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const q = item.querySelector('.faq-q');
+        const a = item.querySelector('.faq-a');
+        if(item.classList.contains('open')) a.style.maxHeight = a.scrollHeight + 'px';
+        q.addEventListener('click', () => {
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = null; });
+            if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+        });
+    });
+
+    /* PRIVACY MODAL */
+    const ppOverlay = document.getElementById('ppOverlayNew');
+    const ppClose = document.getElementById('ppCloseNew');
+    const privacyBtn = document.getElementById('privacyBtn');
+    privacyBtn.addEventListener('click', () => { ppOverlay.classList.add('show'); document.body.style.overflow = 'hidden'; });
+    ppClose.addEventListener('click', () => { ppOverlay.classList.remove('show'); document.body.style.overflow = ''; });
+    ppOverlay.addEventListener('click', e => { if (e.target === ppOverlay) { ppOverlay.classList.remove('show'); document.body.style.overflow = ''; } });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { ppOverlay.classList.remove('show'); document.body.style.overflow = ''; } });
+
+    /* GOOGLE SHEET + META PIXEL ON WHATSAPP CLICK */
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwJpYcfQqaOVhsNIPKG3ksnL9HV-6DQ9S32VKrUGTnSXqBEUqNEU4Yr5VnfgHVeWWOa/exec';
+
+    function sendLeadToSheet(name, age, profession, source) {
+        if (typeof fbq !== 'undefined') fbq('track', 'Lead');
+        const fd = new FormData();
+        fd.append('Source', source || 'Website Click');
+        fd.append('Name', name || '');
+        fd.append('Age', age || '');
+        fd.append('Profession', profession || '');
+        fd.append('Timestamp', new Date().toLocaleString('en-IN'));
+        fetch(SCRIPT_URL, { method: 'POST', body: fd, mode: 'no-cors' }).catch(() => {});
+    }
+
+    /* ===== LEAD FORM POPUP (all buttons except the floating chat icon) ===== */
+    const leadOverlay = document.getElementById('leadOverlay');
+    const leadClose = document.getElementById('leadClose');
+    const leadForm = document.getElementById('leadForm');
+    const leadName = document.getElementById('leadName');
+    const leadAge = document.getElementById('leadAge');
+    const leadProfession = document.getElementById('leadProfession');
+    const DEFAULT_WA = 'https://wa.me/917080175404?text=I%20am%20interested';
+    let pendingWaLink = DEFAULT_WA;
+
+    function openLeadPopup(waLink) {
+        pendingWaLink = waLink || DEFAULT_WA;
+        leadOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLeadPopup() {
+        leadOverlay.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+
+    leadClose.addEventListener('click', closeLeadPopup);
+    leadOverlay.addEventListener('click', e => { if (e.target === leadOverlay) closeLeadPopup(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && leadOverlay.classList.contains('show')) closeLeadPopup(); });
+
+    document.querySelectorAll('.js-open-lead').forEach(el => {
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+            const waLink = el.getAttribute('href') && el.getAttribute('href').includes('wa.me')
+                ? el.getAttribute('href')
+                : (el.getAttribute('data-wa') || DEFAULT_WA);
+            openLeadPopup(waLink);
+        });
+    });
+
+    leadForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let valid = true;
+        [
+            [leadName, document.getElementById('fieldName'), leadName.value.trim().length > 1],
+            [leadAge, document.getElementById('fieldAge'), leadAge.value && Number(leadAge.value) > 9 && Number(leadAge.value) < 100],
+            [leadProfession, document.getElementById('fieldProfession'), leadProfession.value.trim().length > 1]
+        ].forEach(([input, field, ok]) => {
+            field.classList.toggle('err', !ok);
+            if (!ok) valid = false;
+        });
+        if (!valid) return;
+
+        const name = leadName.value.trim();
+        const age = leadAge.value.trim();
+        const profession = leadProfession.value.trim();
+
+        sendLeadToSheet(name, age, profession, 'Landing Page Lead Form');
+
+        const message = `Hi, I am interested.%0AName: ${encodeURIComponent(name)}%0AAge: ${encodeURIComponent(age)}%0AProfession: ${encodeURIComponent(profession)}`;
+        const baseLink = (pendingWaLink || DEFAULT_WA).split('?')[0];
+        const finalLink = `${baseLink}?text=${message}`;
+
+        closeLeadPopup();
+        window.open(finalLink, '_blank');
+        leadForm.reset();
+        document.querySelectorAll('.lead-field').forEach(f => f.classList.remove('err'));
+    });
+
+    /* Auto-open the lead popup 3 seconds after the page loads */
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            if (!leadOverlay.classList.contains('show')) openLeadPopup(DEFAULT_WA);
+        }, 3000);
+    });
+</script>
+</body>
+</html>
